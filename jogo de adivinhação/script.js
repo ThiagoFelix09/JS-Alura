@@ -1,9 +1,9 @@
-var valorSecreto = parseInt(Math.random() * 11);
+var valorSecreto = parseInt(Math.random() * 101);
 var tentativas = 0;
-var maxTentativas = 5;
+var maxTentativas = 10;
 
 while (chute != valorSecreto && tentativas < maxTentativas) {
-  var chute = prompt('Digite um número entre 0 e 10');
+  var chute = prompt('Digite um número entre 0 e 100');
   tentativas++;
 
   if (chute == valorSecreto) {
